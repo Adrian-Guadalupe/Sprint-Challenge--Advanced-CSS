@@ -308,8 +308,7 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
-  background: white;
-  color: #22283A;
+  animation: swap-bg 1s linear 0s infinite alternate;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -326,8 +325,7 @@ footer {
   }
   .home .walk .walk-text .btn:hover {
     cursor: pointer;
-    background: white;
-    color: #22283A;
+    animation: swap-bg 1s linear 0s infinite alternate;
   }
 }
 .home .walk .walk-img {
