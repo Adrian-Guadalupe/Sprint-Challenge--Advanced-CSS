@@ -1,1 +1,30 @@
-// Navigation code here
+.nav-bar {
+   .flex();
+   flex-direction: column;
+   align-items: center;
+   height: 10rem;
+   background: @nav-bg;
+   border-bottom: @nav-border;
+   .topMargin-rem();
+
+   h1 {
+      .topMargin-rem();
+   }
+
+   nav {
+      .flex();
+      justify-content: space-around;
+      text-align: center;
+      width: 50%;
+      .topMargin-rem();
+
+      a {
+         font-size: 1.7rem;
+         text-decoration: none;
+         color: @nav-font;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
