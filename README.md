@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+   An adaptive website typically utilizes hard coded pixels for layout widths, and media queries give special care to specific break points, whose widths are also hard coded with pixels. It is a good option for quick deployment to specific devices, but the technique still lacks in accommodating for thousands of devices because care was only given to specific designs at certain break points.
+
+   A fully responsive website, on the other hand, uses media queries to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+   Mobile first implies you will design and code for a mobile device first and expand layout or features as you gain more screen space toward desktop. For CSS implementations, mobile first usually means your general styles are pointed at the phone and you utilize min-width media queries to layer on more complexity as you grow toward desktop views.
+
+   On the other hand, desktop first implies you will design and code for a desktop view first and constrain layout or features as you lose more screen space toward mobile. For CSS implementations, desktop first usually means your general styles are pointed at the desktop, and you utilize max-width media queries to scale down toward mobile views.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+   62.5% as the base value allows us to convert rem units by the power of 10 instead of 16. (62.5 * .16 = 10). That means 1rem would equate to 10px throughout the document. This makes using rem so much easier to calculate compared to em, because it lets us do quick mental calculations.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+   Preprocessing is simply a more robust syntax for CSS written in a different language. It gives us more programming power over CSS by allowing us to execute complex functions with minimal code, helping to keep our code DRY, and by allowing for more readable/intuitive formatting.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+   My favorite preprocessing  concept is the ability to nest our CSS. It is much more readable, mirroring the structure of our HTML, for example, and makes things easier to find. The inherent specificity of nesting allows us to avoid repeating ourselves, and lets us target our media queries much more effectively.
+   
+   The concept giving me the most trouble is parametric mixins. They’re starting to click, and I’m beginning to appreciate just how powerful they can be, but remembering the syntax and executing it efficiently has been a struggle so far.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
