@@ -4,7 +4,7 @@
    align-items: center;
    height: 10rem;
    background: @nav-bg;
-   border-bottom: @nav-border;
+   border-bottom: 2px solid @nav-border;
    .topMargin-rem();
 
    h1 {
@@ -17,6 +17,10 @@
       text-align: center;
       width: 50%;
       .topMargin-rem();
+
+      @media @phone {
+         width: 80%;
+      }
 
       a {
          font-size: 1.7rem;

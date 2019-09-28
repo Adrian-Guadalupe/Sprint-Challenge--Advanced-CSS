@@ -5,3 +5,19 @@
 .flex {
    display: flex;
 }
+
+.btnStyle(@btnWidth, @btnHeight, @btnFontSz) {
+   width: @btnWidth;
+   height: @btnHeight;
+   background: @btn-bg-color;
+   color: white;
+   text-align: center;
+   font-size: @btnFontSz;
+   padding-top: .7rem;
+   border-radius: .5rem;
+   &:hover {
+     cursor: pointer;
+     background: white;
+     color: @btn-bg-color;
+   }
+ }
