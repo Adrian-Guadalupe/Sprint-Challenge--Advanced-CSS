@@ -1,3 +1,17 @@
+@keyframes swap-bg {
+  from {
+    background: #22283A;
+  }
+  to {
+    background: white;
+  }
+  from {
+    color: white;
+  }
+  to {
+    color: #22283A;
+  }
+}
 .topMargin-rem {
   margin-top: 1.5rem;
 }
